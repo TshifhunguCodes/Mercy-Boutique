@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercy Boutique Hotel | Luxury Experience in Thohoyandou</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-content">
+            <div class="hotel-logo">
+                <i class="fas fa-hotel"></i>
+                <h2>Mercy Boutique </h2>
+            </div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <h1 class="logo-text">MERCY <span>BOUTIQUE</span></h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#rooms" class="nav-link">Rooms & Suites</a></li>
+                    <li><a href="#facilities" class="nav-link">Facilities</a></li>
+                    <li><a href="#dining" class="nav-link">Dining</a></li>
+                    <li><a href="#location" class="nav-link">Location</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a href="#" class="nav-link book-now-btn" id="navBookNow">Book Now</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-slider">
+            <div class="slide active">
+                <div class="slide-bg"></div>
+                <div class="slide-content">
+                    <div class="content-wrapper">
+                        <h2 class="hero-title">
+                            <span class="title-line">Experience Luxury</span>
+                            <span class="title-line">Redefined</span>
+                        </h2>
+                        <p class="hero-subtitle">Where African hospitality meets world-class elegance in the heart of Thohoyandou</p>
+                        <div class="hero-buttons">
+                            <a href="#rooms" class="btn btn-primary pulse">Explore Suites</a>
+                            <a href="#" class="btn btn-outline video-btn" id="watchVideo">
+                                <i class="fas fa-play"></i> Watch Story
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-bg"></div>
+                <div class="slide-content">
+                    <div class="content-wrapper">
+                        <h2 class="hero-title">
+                            <span class="title-line">Premium Suites</span>
+                            <span class="title-line">With Breathtaking Views</span>
+                        </h2>
+                        <p class="hero-subtitle">Indulge in our spacious accommodations with panoramic pool and garden vistas</p>
+                        <div class="hero-buttons">
+                            <a href="#rooms" class="btn btn-primary pulse">View Rooms</a>
+                            <a href="#" class="btn btn-outline" id="navBookNow2">Book Experience</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-bg"></div>
+                <div class="slide-content">
+                    <div class="content-wrapper">
+                        <h2 class="hero-title">
+                            <span class="title-line">Culinary Excellence</span>
+                            <span class="title-line">African Flavors</span>
+                        </h2>
+                        <p class="hero-subtitle">Savor authentic South African cuisine crafted by our master chefs</p>
+                        <div class="hero-buttons">
+                            <a href="#dining" class="btn btn-primary pulse">Explore Dining</a>
+                            <a href="#" class="btn btn-outline">View Menu</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider-controls">
+            <button class="slider-btn prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="slider-btn next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <div class="slider-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div class="arrow"></div>
+        </div>
+    </section>
+
+    <!-- Quick Booking Widget -->
+    <div class="quick-booking-widget">
+        <div class="booking-toggle">
+            <i class="fas fa-calendar-alt"></i>
+            <span>Quick Book</span>
+        </div>
+        <div class="booking-form-widget">
+            <h3>Book Your Stay</h3>
+            <form class="quick-booking-form">
+                <div class="form-group">
+                    <label>Check-in</label>
+                    <input type="date" id="widgetCheckin" required>
+                </div>
+                <div class="form-group">
+                    <label>Check-out</label>
+                    <input type="date" id="widgetCheckout" required>
+                </div>
+                <div class="form-group">
+                    <label>Guests</label>
+                    <select id="widgetGuests">
+                        <option value="1">1 Guest</option>
+                        <option value="2" selected>2 Guests</option>
+                        <option value="3">3 Guests</option>
+                        <option value="4">4 Guests</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Check Availability</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Luxury Redefined</h2>
+                <p class="section-subtitle">Where exceptional service meets unparalleled comfort</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="feature-card" data-aos="fade-right">
+                        <div class="feature-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3>Exclusive Experience</h3>
+                        <p>Mercy Boutique Hotel offers personalized service with attention to every detail, ensuring your stay is nothing short of extraordinary.</p>
+                    </div>
+                    <div class="feature-card" data-aos="fade-right" data-aos-delay="100">
+                        <div class="feature-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Romantic Getaway</h3>
+                        <p>Couples rate our location 8.5 for two-person trips. Perfect for anniversaries, honeymoons, or romantic escapes.</p>
+                    </div>
+                    <div class="feature-card" data-aos="fade-right" data-aos-delay="200">
+                        <div class="feature-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h3>Award-Winning Service</h3>
+                        <p>Recognized for excellence in hospitality and customer service in the Thohoyandou region.</p>
+                    </div>
+                </div>
+                <div class="about-image" data-aos="fade-left">
+                    <div class="image-frame">
+                        <img src="images/n.jpg" alt="Luxury Hotel Experience">
+                        <div class="experience-badge">
+                            <div class="badge-content">
+                                <span class="rating">8.5/10</span>
+                                <span class="label">Couples Love Us</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      <!-- Property Highlights -->
+    <section class="highlights">
+        <div class="container">
+            <div class="highlights-grid">
+                <div class="highlight-item">
+                    <div class="highlight-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Perfect for a 1-night stay!</h3>
+                    <p>Top Location: Highly rated by recent guests (8.3)</p>
+                </div>
+                <div class="highlight-item">
+                    <div class="highlight-icon">
+                        <i class="fas fa-coffee"></i>
+                    </div>
+                    <h3>Breakfast Included</h3>
+                    <p>Full English/Irish breakfast included with your stay</p>
+                </div>
+                <div class="highlight-item">
+                    <div class="highlight-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Stunning Views</h3>
+                    <p>Rooms with pool, garden, and terrace views available</p>
+                </div>
+                <div class="highlight-item">
+                    <div class="highlight-icon">
+                        <i class="fas fa-parking"></i>
+                    </div>
+                    <h3>Free Parking</h3>
+                    <p>Free private parking available at the hotel</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section id="rooms" class="rooms">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Luxurious Accommodations</h2>
+                <p class="section-subtitle">Experience comfort in our meticulously designed rooms and suites</p>
+            </div>
+            <div class="rooms-grid">
+                <!-- King Suite -->
+                <div class="room-card" data-aos="fade-up">
+                    <div class="room-image">
+                        <img src="images/r1.jpg" alt="King Suite">
+                        <div class="room-badge popular">MOST POPULAR</div>
+                        <div class="room-overlay">
+                            <button class="btn view-details-btn" data-room="king">View Gallery</button>
+                        </div>
+                    </div>
+                    <div class="room-content">
+                        <h3 class="room-title">King Suite</h3>
+                        <div class="room-features">
+                            <span><i class="fas fa-bed"></i> 1 Queen Bed</span>
+                            <span><i class="fas fa-expand"></i> 80 m²</span>
+                            <span><i class="fas fa-eye"></i> Pool View</span>
+                        </div>
+                        <div class="room-description">
+                            <p>Spacious suite with luxury amenities, private entrance, and premium comfort features.</p>
+                        </div>
+                        <div class="room-price">
+                            <span class="price">ZAR 1,800</span>
+                            <span class="taxes">+ZAR 158 taxes & fees per night</span>
+                        </div>
+                        <div class="room-actions">
+                            <button class="btn btn-secondary view-details-btn" data-room="king">View Details</button>
+                            <button class="btn btn-primary book-room-btn" data-room="king">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Superior Suite -->
+                <div class="room-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="room-image">
+                        <img src="images/r2.jpg" alt="Superior Suite">
+                        <div class="room-badge value">BEST VALUE</div>
+                        <div class="room-overlay">
+                            <button class="btn view-details-btn" data-room="superior">View Gallery</button>
+                        </div>
+                    </div>
+                    <div class="room-content">
+                        <h3 class="room-title">Superior Suite</h3>
+                        <div class="room-features">
+                            <span><i class="fas fa-bed"></i> 1 Queen Bed</span>
+                            <span><i class="fas fa-expand"></i> 80 m²</span>
+                            <span><i class="fas fa-eye"></i> Garden & Pool View</span>
+                        </div>
+                        <div class="room-description">
+                            <p>Premium suite with stunning views, patio access, and exclusive amenities.</p>
+                        </div>
+                        <div class="room-price">
+                            <span class="price">ZAR 2,070</span>
+                            <span class="taxes">+ZAR 182 taxes & fees per night</span>
+                        </div>
+                        <div class="room-actions">
+                            <button class="btn btn-secondary view-details-btn" data-room="superior">View Details</button>
+                            <button class="btn btn-primary book-room-btn" data-room="superior">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Room Details Modal -->
+    <div id="roomModal" class="room-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <!-- Content will be loaded by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Booking Modal -->
+    <div id="bookingModal" class="booking-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Book Your Luxury Stay</h2>
+            <form id="bookingForm" class="booking-form">
+                <div class="form-section">
+                    <h3>Your Stay Details</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="checkin">Check-in Date</label>
+                            <input type="date" id="checkin" name="checkin" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="checkout">Check-out Date</label>
+                            <input type="date" id="checkout" name="checkout" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="adults">Adults</label>
+                            <select id="adults" name="adults" required>
+                                <option value="1">1 Adult</option>
+                                <option value="2" selected>2 Adults</option>
+                                <option value="3">3 Adults</option>
+                                <option value="4">4 Adults</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="children">Children</label>
+                            <select id="children" name="children">
+                                <option value="0" selected>No Children</option>
+                                <option value="1">1 Child</option>
+                                <option value="2">2 Children</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h3>Room Selection</h3>
+                    <div class="room-options">
+                        <div class="room-option active" data-room="king">
+                            <div class="room-info">
+                                <h4>King Suite</h4>
+                                <p>80 m² • Pool View • Queen Bed</p>
+                                <span class="price">ZAR 1,800/night</span>
+                            </div>
+                        </div>
+                        <div class="room-option" data-room="superior">
+                            <div class="room-info">
+                                <h4>Superior Suite</h4>
+                                <p>80 m² • Garden & Pool View • Queen Bed</p>
+                                <span class="price">ZAR 2,070/night</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h3>Personal Information</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h3>Special Requests</h3>
+                    <div class="form-group">
+                        <textarea id="specialRequests" name="specialRequests" rows="4" placeholder="Any special requests or preferences..."></textarea>
+                    </div>
+                </div>
+
+                <div class="booking-summary">
+                    <div class="summary-item">
+                        <span>Room Rate (2 nights)</span>
+                        <span id="roomTotal">ZAR 3,600</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Taxes & Fees</span>
+                        <span id="taxTotal">ZAR 316</span>
+                    </div>
+                    <div class="summary-total">
+                        <span>Total</span>
+                        <span id="finalTotal">ZAR 3,916</span>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-large">Complete Booking</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Video Modal -->
+    <div id="videoModal" class="video-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="video-container">
+                <video controls id="hotelVideo">
+                    <source src="#" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
+
+  <!-- Facilities Section -->
+    <section id="facilities" class="facilities">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Facilities</h2>
+                <p class="section-subtitle">Premium amenities for a comfortable stay</p>
+            </div>
+            <div class="facilities-grid">
+                <div class="facility-card">
+                    <div class="facility-icon">
+                        <i class="fas fa-swimming-pool"></i>
+                    </div>
+                    <h3>Outdoor Swimming Pool</h3>
+                    <p>Relax and unwind in our beautiful outdoor swimming pool with stunning views.</p>
+                </div>
+                <div class="facility-card">
+                    <div class="facility-icon">
+                        <i class="fas fa-parking"></i>
+                    </div>
+                    <h3>Free Parking</h3>
+                    <p>Complimentary private parking available for all hotel guests.</p>
+                </div>
+                <div class="facility-card">
+                    <div class="facility-icon">
+                        <i class="fas fa-smoking-ban"></i>
+                    </div>
+                    <h3>Non-smoking Rooms</h3>
+                    <p>All our rooms are non-smoking for your comfort and health.</p>
+                </div>
+                <div class="facility-card">
+                    <div class="facility-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Restaurant</h3>
+                    <p>Enjoy delicious African and South African cuisine in our on-site restaurant.</p>
+                </div>
+                <div class="facility-card">
+                    <div class="facility-icon">
+                        <i class="fas fa-concierge-bell"></i>
+                    </div>
+                    <h3>Room Service</h3>
+                    <p>Enjoy the convenience of room service during your stay.</p>
+                </div>
+                <div class="facility-card">
+                    <div class="facility-icon">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <h3>Free WiFi</h3>
+                    <p>Stay connected with complimentary high-speed WiFi throughout the hotel.</p>
+                </div>
+                <div class="facility-card">
+                    <div class="facility-icon">
+                        <i class="fas fa-wheelchair"></i>
+                    </div>
+                    <h3>Disabled Facilities</h3>
+                    <p>Our hotel is equipped with facilities for guests with disabilities.</p>
+                </div>
+                <div class="facility-card">
+                    <div class="facility-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Family Rooms</h3>
+                    <p>Spacious family rooms designed to accommodate your entire family comfortably.</p>
+                </div>
+            </div>
+            <div class="facilities-cta">
+                <p>See all 68 facilities available at our hotel</p>
+                <button class="btn btn-outline">View All Facilities</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dining Section -->
+    <section id="dining" class="dining">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Dining Experience</h2>
+                <p class="section-subtitle">Savor authentic African and South African cuisine</p>
+            </div>
+            <div class="dining-content">
+                <div class="dining-image">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Restaurant Dining">
+                </div>
+                <div class="dining-info">
+                    <h3>Restaurant #1</h3>
+                    <div class="dining-details">
+                        <div class="detail-item">
+                            <h4>Cuisine</h4>
+                            <p>African • South African</p>
+                        </div>
+                        <div class="detail-item">
+                            <h4>Open for</h4>
+                            <p>Breakfast • Brunch • Lunch • Dinner • High tea • Cocktail hour</p>
+                        </div>
+                        <div class="detail-item">
+                            <h4>Ambience</h4>
+                            <p>Family-friendly • Traditional • Modern • Romantic</p>
+                        </div>
+                        <div class="detail-item">
+                            <h4>Dietary Options</h4>
+                            <p>Halal • Kosher • Vegetarian • Dairy-free</p>
+                        </div>
+                    </div>
+                    <div class="dining-cta">
+                        <button class="btn btn-primary">View Menu</button>
+                        <button class="btn btn-outline">Make Reservation</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="location">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Location</h2>
+                <p class="section-subtitle">Conveniently situated near popular attractions</p>
+            </div>
+            <div class="location-content">
+                <div class="location-info">
+                    <div class="location-details">
+                        <div class="detail-card">
+                            <h3><i class="fas fa-shopping-cart"></i> Shopping Centre</h3>
+                            <p> Thavahani Mall: 5 mi</p>
+                        </div>
+                        <div class="detail-card">
+                            <h3><i class="fas fa-tree"></i> Nature Reserve</h3>
+                            <p>Mphaphuli Nature Reserve: 25 mi</p>
+                        </div>
+                        <div class="detail-card">
+                            <h3><i class="fas fa-hiking"></i> State Forest</h3>
+                            <p>Entabeni State Forest: 29 mi</p>
+                        </div>
+                        <div class="detail-card">
+                            <h3><i class="fas fa-car"></i> Parking</h3>
+                            <p>Free on-site private parking available</p>
+                        </div>
+                    </div>
+                    <div class="location-cta">
+                        <p>Couples in particular like the location – they rated it <strong>8.5</strong> for a two-person trip.</p>
+                        <button class="btn btn-primary">Get Directions</button>
+                    </div>
+                </div>
+               <div class="location-map">
+                  <div class="location-image">
+                    <img src="images/map.png" 
+                    alt="Mercy Boutique Hotel Location" 
+                    class="location-photo">
+                     <div class="map-overlay">
+                      <i class="fas fa-map-marked-alt"></i>
+                 <p>Prime Location in Thohoyandou</p>
+            <small>Conveniently situated near major attractions</small>
+        </div>
+    </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- House Rules Section -->
+    <section class="house-rules">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">House Rules</h2>
+                <p class="section-subtitle">Important information for your stay</p>
+            </div>
+            <div class="rules-grid">
+                <div class="rule-card">
+                    <div class="rule-icon">
+                        <i class="fas fa-sign-in-alt"></i>
+                    </div>
+                    <h3>Check-in</h3>
+                    <p>From 2:00 PM to 11:00 PM</p>
+                </div>
+                <div class="rule-card">
+                    <div class="rule-icon">
+                        <i class="fas fa-sign-out-alt"></i>
+                    </div>
+                    <h3>Check-out</h3>
+                    <p>From 10:00 AM to 11:00 AM</p>
+                </div>
+                <div class="rule-card">
+                    <div class="rule-icon">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <h3>Children & Beds</h3>
+                    <p>Children of all ages are welcome. Children 9 and above will be charged as adults.</p>
+                </div>
+                <div class="rule-card">
+                    <div class="rule-icon">
+                        <i class="fas fa-paw"></i>
+                    </div>
+                    <h3>Pets</h3>
+                    <p>Pets are not allowed.</p>
+                </div>
+                <div class="rule-card">
+                    <div class="rule-icon">
+                        <i class="fas fa-ban"></i>
+                    </div>
+                    <h3>Parties</h3>
+                    <p>Parties/events are not allowed.</p>
+                </div>
+                <div class="rule-card">
+                    <div class="rule-icon">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                    <h3>Damage Deposit</h3>
+                    <p>A refundable damage deposit of ZAR 2,000 is required 7 days before arrival.</p>
+                </div>
+            </div>
+            <div class="special-request">
+                <p>Mercy Boutique Hotel takes special requests – contact us for personalized service!</p>
+                <button class="btn btn-primary">Contact Us</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contact Us</h2>
+                <p class="section-subtitle">Get in touch for reservations and inquiries</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Address</h3>
+                            <p>Mercy Boutique Hotel, Thohoyandou, South Africa</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Phone</h3>
+                            <p>+27 123 456 7890</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Email</h3>
+                            <p>info@mercyboutiquehotel.co.za</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Reception Hours</h3>
+                            <p>24/7</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Mercy Boutique Hotel</h3>
+                    <p>Experience luxury and comfort in the heart of Thohoyandou. Our boutique hotel offers premium accommodations, exceptional dining, and unforgettable experiences.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#rooms">Rooms</a></li>
+                        <li><a href="#facilities">Facilities</a></li>
+                        <li><a href="#dining">Dining</a></li>
+                        <li><a href="#location">Location</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Thohoyandou, South Africa</li>
+                        <li><i class="fas fa-phone"></i> +27 123 456 7890</li>
+                        <li><i class="fas fa-envelope"></i> info@mercyboutiquehotel.co.za</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to our newsletter for special offers and updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Mercy Boutique Hotel. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+                       
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="index.js"></script>
+</body>
+</html>
